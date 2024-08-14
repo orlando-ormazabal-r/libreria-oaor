@@ -46,9 +46,10 @@ afterEvaluate {
     publishing {
         publications {
             create<MavenPublication>("oaor-library") {
+                from(components["release"])
                 groupId = "com.oaor.com"
                 artifactId = "oaor-library"
-                version = "1.0.0"
+                version = "1.0.3"
             }
         }
     }

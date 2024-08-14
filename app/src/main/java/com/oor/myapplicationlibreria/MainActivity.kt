@@ -12,7 +12,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.oor.myapplicationlibreria.ui.theme.MyApplicationLibreriaTheme
-import com.oor.mylibrary.OrlandoClass
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,7 +21,7 @@ class MainActivity : ComponentActivity() {
             MyApplicationLibreriaTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Greeting(
-                        name = OrlandoClass().getData(),
+                        name = "OrlandoClass().getData()",
                         modifier = Modifier.padding(innerPadding)
                     )
                 }

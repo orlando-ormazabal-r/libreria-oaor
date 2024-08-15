@@ -52,7 +52,7 @@ dependencies {
 afterEvaluate {
     publishing {
         publications {
-            create<MavenPublication>("libreria-orlando-b") {
+            create<MavenPublication>("mavenlibreriaorlandob") {
                 from(components["release"])
                 groupId = "com.oaor.com"
                 artifactId = "oaor-library-v2"

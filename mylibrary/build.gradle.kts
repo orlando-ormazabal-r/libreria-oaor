@@ -61,7 +61,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "com.oaor.com"
                 artifactId = "oaor-library"
-                version = "1.0.6"
+                version = "1.0.8"
             }
         }
     }

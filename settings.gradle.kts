@@ -23,4 +23,3 @@ dependencyResolutionManagement {
 rootProject.name = "My Application Libreria"
 include(":app")
 include(":mylibrary")
-include(":mylibrary2")

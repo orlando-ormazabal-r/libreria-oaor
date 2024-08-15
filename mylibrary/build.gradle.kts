@@ -31,6 +31,12 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildFeatures {
+        compose = true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.5.1"
+    }
 }
 
 dependencies {
@@ -55,7 +61,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "com.oaor.com"
                 artifactId = "oaor-library"
-                version = "1.0.5"
+                version = "1.0.6"
             }
         }
     }

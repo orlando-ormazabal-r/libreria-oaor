@@ -16,11 +16,12 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 fun TextWhitDescription(
+    modifier: Modifier = Modifier,
     text: String,
     description: String
 ) {
     Column(
-        modifier = Modifier
+        modifier = modifier
             .fillMaxWidth()
             .background(Color.DarkGray)
     ) {

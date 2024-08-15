@@ -15,7 +15,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 @Composable
-fun TextWhitDescription(
+fun TextWhitDescriptionV2(
     modifier: Modifier = Modifier,
     text: String,
     description: String

@@ -31,12 +31,6 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
-    buildFeatures {
-        compose = true
-    }
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1"
-    }
 }
 
 dependencies {
@@ -54,14 +48,15 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }
+
 afterEvaluate {
     publishing {
         publications {
-            create<MavenPublication>("maven") {
+            create<MavenPublication>("libreria-orlando-b") {
                 from(components["release"])
                 groupId = "com.oaor.com"
                 artifactId = "oaor-library-v2"
-                version = "1.0.0-alpha"
+                version = "1.0.6"
             }
         }
     }
